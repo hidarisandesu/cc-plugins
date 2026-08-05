@@ -1,0 +1,8 @@
+{
+  "name": "hook-reply-first",
+  "description": "UserPromptSubmit hook that makes Claude reply in text before running tools.",
+  "author": {
+    "name": "hidarisandesu"
+  },
+  "repository": "https://github.com/hidarisandesu/cc-plugins"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "skills-core",
+  "description": "Personal agent skills for Claude Code (core, always-on).",
+  "author": {
+    "name": "hidarisandesu"
+  },
+  "repository": "https://github.com/hidarisandesu/cc-plugins",
+  "skills": [
+    "./skills/productivity/handoff",
+    "./skills/productivity/grilling",
+    "./skills/productivity/grill-me",
+    "./skills/engineering/research",
+    "./skills/engineering/domain-modeling",
+    "./skills/engineering/grill-with-docs",
+    "./skills/communication/ja-text-communication",
+    "./skills/system/sync-dotfiles"
+  ]
+}

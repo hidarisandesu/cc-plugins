@@ -1,0 +1,8 @@
+{
+  "name": "style-structured",
+  "description": "Structured output style, auto-applied while this plugin is enabled.",
+  "author": {
+    "name": "hidarisandesu"
+  },
+  "repository": "https://github.com/hidarisandesu/cc-plugins"
+}

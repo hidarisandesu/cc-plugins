@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Node (scripts などで使う場合)
+node_modules/
+
+# handoff スキルの一時成果物（プラグインには含めない）
+.handoff/

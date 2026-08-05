@@ -1,0 +1,21 @@
+{
+  "name": "cc-plugins",
+  "owner": {
+    "name": "hidarisandesu"
+  },
+  "description": "hidarisandesu's personal Claude Code plugins.",
+  "plugins": [
+    {
+      "name": "skills-core",
+      "source": "./plugins/core"
+    },
+    {
+      "name": "hook-reply-first",
+      "source": "./plugins/hook-reply-first"
+    },
+    {
+      "name": "style-structured",
+      "source": "./plugins/style-structured"
+    }
+  ]
+}
