@@ -9,6 +9,7 @@
     "./skills/productivity/handoff",
     "./skills/productivity/grilling",
     "./skills/productivity/grill-me",
+    "./skills/productivity/wakaran",
     "./skills/engineering/research",
     "./skills/engineering/domain-modeling",
     "./skills/engineering/grill-with-docs",
