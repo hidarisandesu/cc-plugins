@@ -10,24 +10,32 @@ hidarisandesu の個人用 Claude Code プラグイン集（マーケットプ�
 
 ## インストール
 
-Claude Code のセッション内から：
+ターミナルから（Claude Code を起動していなくてよい）：
+
+```sh
+claude plugin marketplace add hidarisandesu/cc-plugins
+claude plugin install skills-core@cc-plugins
+```
+
+インストールしたプラグインは、次回の `claude` 起動時から有効になる（起動中のセッションがあれば `/reload-plugins` でも反映できる）。既定では user scope（`~/.claude`、全プロジェクト共通）に入る。プロジェクト単位・ローカル限定にするなら `--scope project` / `--scope local` を付ける。
+
+Claude Code のセッション内からも同じ形で入れられる：
 
 ```
 /plugin marketplace add hidarisandesu/cc-plugins
 /plugin install <プラグイン名>@cc-plugins
 ```
 
-例: `/plugin install skills-core@cc-plugins`
-
-シェルからは `claude plugin marketplace add` / `claude plugin install` で同じ形。
-`claude plugin install` は既定で user scope（`~/.claude`）に入る。プロジェクト単位・ローカル限定にするなら `--scope project` / `--scope local` を付ける。
-
 ## 更新
 
+ターミナルから：
+
+```sh
+claude plugin marketplace update cc-plugins
+claude plugin update <プラグイン名>@cc-plugins
 ```
-/plugin marketplace update cc-plugins
-/plugin update <プラグイン名>@cc-plugins
-```
+
+セッション内では `/plugin marketplace update` / `/plugin update`。スキルの反映確認は再起動後に行う（更新直後はスラッシュメニューが古いままのことがある）。
 
 ## 参考
 
