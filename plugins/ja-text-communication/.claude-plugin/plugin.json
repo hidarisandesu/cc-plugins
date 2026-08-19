@@ -1,0 +1,11 @@
+{
+  "name": "ja-text-communication",
+  "description": "Skill that enforces Japanese text-communication rules for all user-facing writing.",
+  "author": {
+    "name": "hidarisandesu"
+  },
+  "repository": "https://github.com/hidarisandesu/cc-plugins",
+  "skills": [
+    "./skills/ja-text-communication"
+  ]
+}

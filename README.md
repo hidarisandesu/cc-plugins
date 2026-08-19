@@ -6,6 +6,7 @@ hidarisandesu の個人用 Claude Code プラグイン集（マーケットプ�
 - **hook-reply-first** — ツール実行より先に返答を本文で書かせる UserPromptSubmit hook
 - **hook-pretool-reply** — ツール連鎖の途中でも進捗を本文に書かせる PreToolUse hook（対象は Bash・Edit・Write 等の副作用系ツール）
 - **style-structured** — Structured output style（有効化後、`/output-style` で選択して適用する）
+- **ja-text-communication** — 日本語の文章コミュニケーション規則を全出力に適用させるスキル
 
 各プラグインの中身は、`plugins/*/skills/*/SKILL.md` の frontmatter、または Claude Code の `/plugin`（Discover タブ）で確認する。この README には個別スキルの説明を書かない（増減のたびに陳腐化するため、一覧は一次情報に任せる）。
 

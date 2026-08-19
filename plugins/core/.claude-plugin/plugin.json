@@ -13,7 +13,6 @@
     "./skills/engineering/research",
     "./skills/engineering/domain-modeling",
     "./skills/engineering/grill-with-docs",
-    "./skills/communication/ja-text-communication",
     "./skills/system/sync-dotfiles"
   ]
 }

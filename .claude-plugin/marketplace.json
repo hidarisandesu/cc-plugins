@@ -20,6 +20,10 @@
     {
       "name": "style-structured",
       "source": "./plugins/style-structured"
+    },
+    {
+      "name": "ja-text-communication",
+      "source": "./plugins/ja-text-communication"
     }
   ]
 }
