@@ -30,6 +30,14 @@ version の不在は不備ではなく意図。手で version を足すと反映
 反映確認は必ず再起動後に行う。
 （2026-08-03 / Claude Code 2.1.220 で観測。挙動は変わりうるので、食い違ったら下記で再確認する。）
 
+## なぜシェルスクリプト追加時に実行ビットを明示登録するか
+開発機は Windows で、ファイルシステムに Unix の実行権限が存在しないため、
+コミットしても git には 100644（実行ビットなし）で記録される。
+その状態で配布すると Linux 側のインストールにそのまま再現され、
+フック実行のたびに Permission denied が出続ける。
+スクリプトを追加したら `git update-index --chmod=+x <path>` で登録してからコミットする。
+（2026-08-19 / hook-pretool-reply の pretool-reply.sh で実害を観測。）
+
 ## 実装仕様の参照先
 - <https://code.claude.com/docs/en/skills>
 - <https://code.claude.com/docs/en/plugin-marketplaces>
