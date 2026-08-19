@@ -12,7 +12,6 @@
     "./skills/productivity/wakaran",
     "./skills/engineering/research",
     "./skills/engineering/domain-modeling",
-    "./skills/engineering/grill-with-docs",
-    "./skills/system/sync-dotfiles"
+    "./skills/engineering/grill-with-docs"
   ]
 }

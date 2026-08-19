@@ -1,0 +1,11 @@
+{
+  "name": "sync-dotfiles",
+  "description": "Skill that syncs the chezmoi dotfiles repository with its remote.",
+  "author": {
+    "name": "hidarisandesu"
+  },
+  "repository": "https://github.com/hidarisandesu/cc-plugins",
+  "skills": [
+    "./skills/sync-dotfiles"
+  ]
+}
