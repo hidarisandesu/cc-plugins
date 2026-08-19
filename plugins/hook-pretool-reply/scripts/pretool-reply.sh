@@ -1,7 +1,7 @@
 #!/bin/sh
 # PreToolUse hook: 副作用系ツール（matcher で指定）の実行前に1行注入する。
-# UserPromptSubmit はツール連鎖の途中で発火しないため、その区間のリマインドを補う。
-# 発火はモデルがツール呼び出しを出力した後なので、効くのは次の判断から。
+# ツール間に書いた本文は表示されない思考チャネルに落ちる現象があるため、
+# 「ツールの前に書け」ではなく、表示が保証されるターン末尾への再掲を要求する。
 cat <<'EOF'
-{"hookSpecificOutput":{"hookEventName":"PreToolUse","additionalContext":"直前のツール結果を踏まえた進捗か判断を本文に一言書いてから、次のツールに進むこと。"}}
+{"hookSpecificOutput":{"hookEventName":"PreToolUse","additionalContext":"ツール間に書いた本文はユーザーに表示されないことがある。重要な発見・判断・結論は、ターン末尾のメッセージに必ずまとめて書くこと。"}}
 EOF

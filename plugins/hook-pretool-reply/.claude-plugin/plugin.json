@@ -1,6 +1,6 @@
 {
   "name": "hook-pretool-reply",
-  "description": "PreToolUse hook that reminds Claude to narrate progress before side-effecting tool calls.",
+  "description": "PreToolUse hook that reminds Claude to restate important findings in the final message of the turn.",
   "author": {
     "name": "hidarisandesu"
   },

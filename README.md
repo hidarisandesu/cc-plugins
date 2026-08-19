@@ -4,7 +4,7 @@ hidarisandesu の個人用 Claude Code プラグイン集（マーケットプ�
 
 - **skills-core** — 常時使うコアスキル
 - **hook-reply-first** — ツール実行より先に返答を本文で書かせる UserPromptSubmit hook
-- **hook-pretool-reply** — ツール連鎖の途中でも進捗を本文に書かせる PreToolUse hook（対象は Bash・Edit・Write 等の副作用系ツール）
+- **hook-pretool-reply** — 重要な発見・判断をターン末尾の本文に必ずまとめさせる PreToolUse hook（対象は Bash・Edit・Write 等の副作用系ツール）
 - **style-structured** — Structured output style（有効化後、`/output-style` で選択して適用する）
 - **ja-text-communication** — 日本語の文章コミュニケーション規則を全出力に適用させるスキル
 - **sync-dotfiles** — chezmoi dotfiles リポジトリをリモートと双方向同期するスキル
