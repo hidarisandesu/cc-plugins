@@ -8,11 +8,14 @@
 既定インストールを軽く保ち、不要なスキルを全員に強制しないため。
 最小の常時集合を core、任意で入れる集合を optional とする。
 
-## なぜ hook と output style を core に入れず単機能プラグインに分けるか
+## なぜ挙動を変える指示を core に入れず単機能プラグインに分けるか
 挙動を変える指示は、効果に確信が持てないまま運用に入ることがある。
 効かないと判断したとき、コミットなしでマシン単位・即時に外せる撤退経路を残すため、
 hook-reply-first / hook-pretool-reply / style-structured はそれぞれ独立プラグインとする。
 core に統合するとスキル群を巻き込まずに外せなくなる。
+ja-text-communication も同じ理由で core から分離した（2026-08-19）。
+Claude Code にはプラグイン内の個別スキルだけを無効化する仕組みがなく、
+ON/OFF の単位を作るには分割しかない。
 
 ## なぜ style-structured のスタイルを強制適用にしないか
 公開マーケットプレイスでは、プラグイン導入と同時にユーザーの outputStyle 設定を
@@ -37,6 +40,11 @@ version の不在は不備ではなく意図。手で version を足すと反映
 フック実行のたびに Permission denied が出続ける。
 スクリプトを追加したら `git update-index --chmod=+x <path>` で登録してからコミットする。
 （2026-08-19 / hook-pretool-reply の pretool-reply.sh で実害を観測。）
+
+## なぜ manifest の検証を claude plugin validate に一本化するか
+セッションごとに場当たりな方法（python や node での構文チェック等）を選ぶと再現性がない。
+公式バリデータは JSON 構文に加えてスキーマも検査するため、検証はこれのみを使う。
+（2026-08-19 に検証方法が毎回変わる問題を指摘されて追記。）
 
 ## 実装仕様の参照先
 - <https://code.claude.com/docs/en/skills>
