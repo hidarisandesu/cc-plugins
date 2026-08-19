@@ -1,0 +1,8 @@
+{
+  "name": "hook-pretool-reply",
+  "description": "PreToolUse hook that reminds Claude to narrate progress before side-effecting tool calls.",
+  "author": {
+    "name": "hidarisandesu"
+  },
+  "repository": "https://github.com/hidarisandesu/cc-plugins"
+}

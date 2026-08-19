@@ -14,6 +14,10 @@
       "source": "./plugins/hook-reply-first"
     },
     {
+      "name": "hook-pretool-reply",
+      "source": "./plugins/hook-pretool-reply"
+    },
+    {
       "name": "style-structured",
       "source": "./plugins/style-structured"
     }

@@ -11,7 +11,7 @@
 ## なぜ hook と output style を core に入れず単機能プラグインに分けるか
 挙動を変える指示は、効果に確信が持てないまま運用に入ることがある。
 効かないと判断したとき、コミットなしでマシン単位・即時に外せる撤退経路を残すため、
-hook-reply-first / style-structured はそれぞれ独立プラグインとする。
+hook-reply-first / hook-pretool-reply / style-structured はそれぞれ独立プラグインとする。
 core に統合するとスキル群を巻き込まずに外せなくなる。
 
 ## なぜ style-structured のスタイルを強制適用にしないか
