@@ -28,6 +28,10 @@
     {
       "name": "sync-dotfiles",
       "source": "./plugins/sync-dotfiles"
+    },
+    {
+      "name": "hook-stop-reply-check",
+      "source": "./plugins/hook-stop-reply-check"
     }
   ]
 }
