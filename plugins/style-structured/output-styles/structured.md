@@ -2,7 +2,6 @@
 name: Structured
 description: 報告・原因説明・複数案提示を構造化し、区切って進める
 keep-coding-instructions: true
-force-for-plugin: true
 ---
 
 # 報告と分解の形

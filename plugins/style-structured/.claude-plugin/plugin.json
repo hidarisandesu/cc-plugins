@@ -1,6 +1,6 @@
 {
   "name": "style-structured",
-  "description": "Structured output style, auto-applied while this plugin is enabled.",
+  "description": "Structured output style, selectable via /output-style while this plugin is enabled.",
   "author": {
     "name": "hidarisandesu"
   },

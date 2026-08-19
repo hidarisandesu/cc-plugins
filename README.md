@@ -4,7 +4,7 @@ hidarisandesu の個人用 Claude Code プラグイン集（マーケットプ�
 
 - **skills-core** — 常時使うコアスキル
 - **hook-reply-first** — ツール実行より先に返答を本文で書かせる UserPromptSubmit hook
-- **style-structured** — Structured output style（有効化するだけで自動適用される）
+- **style-structured** — Structured output style（有効化後、`/output-style` で選択して適用する）
 
 各プラグインの中身は、`plugins/*/skills/*/SKILL.md` の frontmatter、または Claude Code の `/plugin`（Discover タブ）で確認する。この README には個別スキルの説明を書かない（増減のたびに陳腐化するため、一覧は一次情報に任せる）。
 
